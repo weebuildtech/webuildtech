@@ -1,0 +1,13 @@
+<svg width="168" height="132" viewBox="0 0 168 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Tile de textura: o símbolo WeBuild em grade escalonada, branco. A opacidade vem do CSS. -->
+<defs>
+<g id="m" fill="#FFFFFF">
+<rect width="8.15" height="28.9211" rx="4.075" transform="matrix(0.748393 0.663256 -0.460401 0.887711 35.785 0)"/>
+<rect width="6.54643" height="28.87" rx="3.27321" transform="matrix(-0.95969 0.28106 -0.506924 -0.861991 32.143 27.4341)"/>
+<rect width="8.15" height="27.9665" rx="4.075" transform="matrix(-0.726379 -0.687294 0.489088 -0.872234 16.7819 31.0436)"/>
+<rect width="7.31794" height="29.7277" rx="3.65897" transform="matrix(0.981723 -0.190317 0.424309 0.905518 0 3.33508)"/>
+</g>
+</defs>
+<use href="#m" x="21" y="17"/>
+<use href="#m" x="105" y="83"/>
+</svg>
