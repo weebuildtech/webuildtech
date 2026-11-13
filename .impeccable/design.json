@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T13:20:39+00:00",
+  "title": "Design System: WeBuild Tech",
+  "extensions": {
+    "colorMeta": {
+      "build-blue": {
+        "role": "primary",
+        "displayName": "Azul Construção",
+        "tonalRamp": [
+          "#0B1A5C",
+          "#112685",
+          "#1834B8",
+          "#2347E5",
+          "#3D63FF",
+          "#7892FF",
+          "#B3C2FF",
+          "#E4E9FC"
+        ]
+      },
+      "build-blue-hover": {
+        "role": "primary",
+        "displayName": "Azul Construção Aceso"
+      },
+      "signal-blue": {
+        "role": "primary",
+        "displayName": "Azul Sinal"
+      },
+      "mark-periwinkle": {
+        "role": "secondary",
+        "displayName": "Pervinca do Símbolo",
+        "tonalRamp": [
+          "#1A2560",
+          "#25358A",
+          "#3A4FC0",
+          "#5772E9",
+          "#7C90EE",
+          "#A2B1F3",
+          "#C9D2F8",
+          "#EEF1FD"
+        ]
+      },
+      "mark-haze": {
+        "role": "secondary",
+        "displayName": "Névoa do Símbolo"
+      },
+      "live-mint": {
+        "role": "tertiary",
+        "displayName": "Menta Ao Vivo"
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Noite",
+        "tonalRamp": [
+          "#05070F",
+          "#0A0E1C",
+          "#0E1426",
+          "#1A2238",
+          "#2A3350",
+          "#4A5470",
+          "#8691AE",
+          "#C2C9DC"
+        ]
+      },
+      "night-raised": {
+        "role": "neutral",
+        "displayName": "Noite Elevada"
+      },
+      "night-panel": {
+        "role": "neutral",
+        "displayName": "Painel Noturno"
+      },
+      "chalk": {
+        "role": "neutral",
+        "displayName": "Giz"
+      },
+      "steel-text": {
+        "role": "neutral",
+        "displayName": "Aço"
+      },
+      "steel-mute": {
+        "role": "neutral",
+        "displayName": "Aço Fosco"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta (logo dark)"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel (logo light)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Título do hero e do CTA final; palavras-dor em contorno fantasma."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Título de seção, com quebra manual."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Projetos, passos, sócios, cards."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Frase de apoio sob títulos, 44–56ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Descrições e respostas, até 62ch."
+      },
+      "label": {
+        "displayName": "Label (mono)",
+        "purpose": "Metadados: categoria, contagem, papel, nav."
+      }
+    },
+    "shadows": [
+      {
+        "name": "frame-rest",
+        "value": "0 30px 80px -30px rgba(0,0,0,0.7)",
+        "purpose": "Molduras de projeto e retratos em repouso."
+      },
+      {
+        "name": "frame-hover",
+        "value": "0 36px 70px -30px rgba(0,0,0,0.85)",
+        "purpose": "Moldura no hover, junto com translateY(-6px)."
+      },
+      {
+        "name": "button-hover",
+        "value": "0 12px 24px -14px rgba(5,7,15,0.6)",
+        "purpose": "Pílulas sólidas e brancas no hover."
+      },
+      {
+        "name": "fab",
+        "value": "0 10px 26px -8px rgba(5,7,15,0.45)",
+        "purpose": "Atalho flutuante do WhatsApp."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-arrive",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Chegadas confiantes: caixa tracejada, disco da seta, guias se desenhando."
+      },
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Hover de botões, molduras e setas."
+      },
+      {
+        "name": "hero-cycle",
+        "value": "2800ms (4200ms com redução de movimento)",
+        "purpose": "Troca da linha ativa do título anotado."
+      },
+      {
+        "name": "guide-march",
+        "value": "900ms linear infinite",
+        "purpose": "Tracejado da guia ativa andando até o chip."
+      },
+      {
+        "name": "horizon-run",
+        "value": "9s cubic-bezier(.45,0,.25,1) infinite",
+        "purpose": "Traço de luz percorrendo o arco no topo da seção Soluções."
+      },
+      {
+        "name": "stage-recede",
+        "value": "scroll-linked: translateY(-60px) scale(.96) opacity 1→0",
+        "purpose": "Hero preso recuando enquanto Soluções sobe por cima com a cúpula."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "820px"
+      },
+      {
+        "name": "annotations-off",
+        "value": "1000px"
+      },
+      {
+        "name": "tablet",
+        "value": "1080px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Hero Button",
+      "kind": "button",
+      "refersTo": "button-hero",
+      "description": "Ação principal da página: pílula branca com disco azul e seta.",
+      "html": "<a class=\"ds-btn-hero\" href=\"#\">Quero meu diagnóstico gratuito <span class=\"ds-disc\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"18\" height=\"18\"><path d=\"M3 8h10M9 4l4 4-4 4\"/></svg></span></a>",
+      "css": ".ds-btn-hero{display:inline-flex;align-items:center;gap:20px;min-height:56px;padding:8px 8px 8px 26px;border-radius:999px;background:#F4F6FC;color:#0A1330;font-family:\"Space Grotesk\", \"Helvetica Neue\", Arial, sans-serif;font-weight:600;font-size:16px;letter-spacing:-0.01em;text-decoration:none;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s ease}.ds-btn-hero:hover{transform:translateY(-2px);box-shadow:0 14px 28px -14px rgba(5,7,15,.55)}.ds-btn-hero:focus-visible{outline:2px solid #05070F;box-shadow:0 0 0 4px #F4F6FC}.ds-disc{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#2347E5;color:#fff;transition:transform .35s cubic-bezier(.16,1,.3,1),background .3s ease}.ds-btn-hero:hover .ds-disc{transform:translateX(4px);background:#3D63FF}"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação sólida secundária (nav, cards).",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Começar projeto</a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;padding:18px 30px;border-radius:999px;background:#2347E5;color:#fff;font-family:\"Space Grotesk\", \"Helvetica Neue\", Arial, sans-serif;font-weight:500;font-size:16px;text-decoration:none;transition:transform .35s cubic-bezier(.2,.8,.2,1),background .3s ease,box-shadow .35s ease}.ds-btn-primary:hover{background:#3D63FF;transform:translateY(-2px);box-shadow:0 12px 24px -14px rgba(5,7,15,.6)}.ds-btn-primary:focus-visible{outline:2px solid #05070F;box-shadow:0 0 0 4px #F4F6FC}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Ação alternativa em contorno.",
+      "html": "<a class=\"ds-btn-line\" href=\"#\">Ver portfólio</a>",
+      "css": ".ds-btn-line{display:inline-flex;align-items:center;padding:18px 30px;border-radius:999px;border:1px solid rgba(140,160,220,.75);background:transparent;color:#F4F6FC;font-family:\"Space Grotesk\", \"Helvetica Neue\", Arial, sans-serif;font-weight:500;font-size:16px;text-decoration:none;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s ease}.ds-btn-line:hover{border-color:#7892FF;transform:translateY(-2px)}.ds-btn-line:focus-visible{outline:2px solid #3D63FF;outline-offset:3px}"
+    },
+    {
+      "name": "Annotation Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Rótulo de solução do título anotado; acende em azul cheio quando ativo.",
+      "html": "<span class=\"ds-chip\"><b>Totem</b> autoatendimento</span> <span class=\"ds-chip is-on\"><b>Sistema</b> sob medida</span>",
+      "css": ".ds-chip{display:inline-flex;align-items:baseline;gap:7px;padding:10px 16px;border-radius:999px;border:1px solid rgba(140,160,220,.22);background:#0A0E1C;font-family:\"Space Grotesk\", \"Helvetica Neue\", Arial, sans-serif;font-size:15px;line-height:18px;color:#8691AE;white-space:nowrap;transition:background .35s ease,border-color .35s ease,color .35s ease}.ds-chip b{font-weight:600;color:#F4F6FC}.ds-chip.is-on,.ds-chip:hover{background:#2347E5;border-color:#2347E5;color:#DCE3FC}.ds-chip.is-on b,.ds-chip:hover b{color:#fff}"
+    },
+    {
+      "name": "Solution Card",
+      "kind": "card",
+      "refersTo": "card-need",
+      "description": "Porta de entrada de uma solução: ícone solto, título, frase e duas ações.",
+      "html": "<article class=\"ds-card\"><svg class=\"ds-card-ic\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 9h18M9 9v11\"/></svg><div><h3>Sistema sob medida</h3><p>Agenda, pedidos e cadastros do jeito que a sua operação funciona.</p><a href=\"#\">Ver exemplo ↓</a></div></article>",
+      "css": ".ds-card{display:grid;grid-template-columns:52px 1fr;gap:22px;padding:32px;border-radius:16px;background:#0E1426;border:1px solid rgba(140,160,220,.22);font-family:\"Space Grotesk\", \"Helvetica Neue\", Arial, sans-serif;transition:border-color .3s ease}.ds-card:hover,.ds-card:focus-within{border-color:#7892FF}.ds-card-ic{width:30px;height:30px;color:#7892FF}.ds-card h3{margin:0 0 8px;font-size:24px;line-height:28px;font-weight:500;letter-spacing:-.025em;color:#F4F6FC}.ds-card p{margin:0 0 16px;font-size:16px;line-height:25px;color:#C2C9DC}.ds-card a{font-size:14px;font-weight:500;color:#7892FF;text-decoration:none}.ds-card a:hover{color:#F4F6FC;text-decoration:underline;text-underline-offset:4px}"
+    },
+    {
+      "name": "Project Frame",
+      "kind": "card",
+      "refersTo": "project-frame",
+      "description": "Moldura de navegador que mostra o produto, com domínio no ar ou selo de conceito.",
+      "html": "<a class=\"ds-frame\" href=\"#\"><div class=\"ds-bar\"><i></i><i></i><i></i><span class=\"ds-url\">cliniker.app.br</span></div><div class=\"ds-shot\">Cliniker</div></a>",
+      "css": ".ds-frame{display:block;width:360px;border-radius:14px;overflow:hidden;border:1px solid rgba(140,160,220,.22);background:#0E1426;box-shadow:0 30px 80px -30px rgba(0,0,0,.7);text-decoration:none;transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .3s ease,box-shadow .5s ease}.ds-frame:hover{transform:translateY(-6px);border-color:#7892FF;box-shadow:0 36px 70px -30px rgba(0,0,0,.85)}.ds-bar{height:34px;display:flex;align-items:center;gap:7px;padding:0 14px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(140,160,220,.2)}.ds-bar i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.14)}.ds-url{margin-left:auto;display:inline-flex;align-items:center;gap:8px;padding:4px 12px;border-radius:999px;border:1px solid rgba(140,160,220,.2);font-family:\"Geist Mono\", ui-monospace, monospace;font-size:11px;color:#8691AE}.ds-url::before{content:'';width:6px;height:6px;border-radius:50%;background:#5BD6A8}.ds-shot{aspect-ratio:16/10;display:grid;place-items:center;background:linear-gradient(165deg,#142046 0%,#0E1426 62%);font-family:\"Geist Mono\", ui-monospace, monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:rgba(120,146,255,.6)}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Nav fixo: logo light, links mono, botão sólido.",
+      "html": "<nav class=\"ds-nav\"><strong class=\"ds-logo\">WeBuild.Tech</strong><span class=\"ds-links\"><a href=\"#\">Soluções</a><a href=\"#\">Portfólio</a><a href=\"#\">Contato</a></span></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:32px;height:76px;padding:0 24px;background:rgba(5,7,15,.94);border-bottom:1px solid rgba(140,160,220,.2)}.ds-logo{font-family:\"Space Grotesk\", \"Helvetica Neue\", Arial, sans-serif;font-weight:600;color:#F4F6FC}.ds-links{display:flex;gap:32px}.ds-links a{position:relative;font-family:\"Geist Mono\", ui-monospace, monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8691AE;text-decoration:none;transition:color .25s ease}.ds-links a::after{content:'';position:absolute;left:0;bottom:-6px;height:1px;width:0;background:#3D63FF;transition:width .3s cubic-bezier(.2,.8,.2,1)}.ds-links a:hover{color:#F4F6FC}.ds-links a:hover::after{width:100%}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Oficina à Noite",
+    "overview": "A WeBuild se apresenta como a bancada de quem constrói, vista depois do expediente: fundo noturno profundo, as ferramentas à vista e a luz azul da marca acesa só onde há trabalho acontecendo. A página não esconde o processo. Ela mostra peças encaixando: guias tracejadas que ligam a dor do cliente à solução, molduras de navegador com o produto dentro, e o símbolo W, que é ele mesmo quatro barras montadas.\n\nA densidade é editorial: títulos enormes e apertados, muito ar entre seções, pouca coisa por tela. A interação é tátil e confiante. Os botões são pílulas grandes, a ação principal tem sempre o contraste mais alto da tela e o estado ativo é inequívoco (o chip acende em azul cheio, não muda só um tom).\n\nA luz é linear, nunca pontual. Gradientes aparecem como horizonte, como lavagem caindo do topo de uma seção ou como linha de luz que separa uma seção da outra. O dono do projeto rejeitou explicitamente as bolhas radiais de neon e as seções claras alternadas.",
+    "keyCharacteristics": [
+      "Fundo noturno contínuo (#05070F), com seções diferenciadas por lavagem linear e linha de luz, não por troca de cor.",
+      "Um único acento: o azul da marca, reservado para ação, estado ativo e luz.",
+      "Tipografia display gigante e apertada (Space Grotesk 500, até 108px, -0.04em), com palavras-dor em contorno \"fantasma\".",
+      "Rótulos mono pequenos e espaçados (Geist Mono) para metadados: categoria, endereço, contagem.",
+      "Anotação como linguagem: guias tracejadas em SVG, caixas tracejadas e chips que apontam do problema para a solução.",
+      "O símbolo W como textura (grade escalonada no CTA final), nunca redesenhado."
+    ],
+    "rules": [
+      {
+        "name": "The One Light Rule",
+        "body": "O azul é luz: aparece onde há ação ou estado ativo, e em nenhum outro lugar. Se dois elementos azuis competem na mesma dobra, um deles está errado.",
+        "section": "colors"
+      },
+      {
+        "name": "The Linear Light Rule",
+        "body": "Todo gradiente é linear ou segue uma curva (horizonte). Nunca `radial-gradient` em bolha, nunca glow colorido sem deslocamento.",
+        "section": "colors"
+      },
+      {
+        "name": "The Night Floor Rule",
+        "body": "A página é escura do início ao fim. Seções se distinguem por lavagem e linha de luz, não por fundo claro.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Eyebrow Rule",
+        "body": "Título de seção não ganha etiqueta mono acima dele. O título fala sozinho; a mono fica para metadado.",
+        "section": "typography"
+      },
+      {
+        "name": "The 11px Floor Rule",
+        "body": "Nenhum texto funcional abaixo de 11px, nem no mobile.",
+        "section": "typography"
+      },
+      {
+        "name": "The Neutral Shadow Rule",
+        "body": "Sombra é sempre preta e deslocada para baixo. Sombra azul ou halo colorido não existe neste sistema.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** usar os arquivos de `assets/brand/` para o logo e o símbolo: horizontal light sobre a noite, color sobre fundo claro.",
+      "**Do** distinguir seções com lavagem linear do topo (Azul Construção a 8%, sumindo em 380px) e linha de luz de 1px (Pervinca a 50% no centro).",
+      "**Do** fazer a ação principal ser a pílula de maior contraste da dobra (branca sobre a noite).",
+      "**Do** acender estados por completo: chip ativo com fundo cheio, borda que vira Azul Sinal no hover.",
+      "**Do** desenhar setas e ícones em SVG de traço único (1.6 a 1.8px, pontas arredondadas).",
+      "**Do** manter conceitos identificados com o selo \"Conceito\" na barra da moldura."
+    ],
+    "donts": [
+      "**Don't** usar `radial-gradient` em bolha, glow de neon ou sombra colorida.",
+      "**Don't** alternar seções claras com escuras; a página é noturna do início ao fim.",
+      "**Don't** colocar etiqueta mono acima de um título de seção.",
+      "**Don't** colocar ícone dentro de quadradinho com fundo colorido.",
+      "**Don't** redesenhar, recortar ou recolorir o símbolo W fora das versões color, dark e light.",
+      "**Don't** usar texto funcional abaixo de 11px."
+    ]
+  }
+}
